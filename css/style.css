@@ -1,0 +1,212 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Reusable properties */
+
+.bg-gray {
+    background-color: lightgray;
+}
+
+/* Global properties */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* header */
+
+header {
+    padding: 1rem;
+
+    background-color: #255ee9;
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#main-nav #links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
+    gap: 3rem;
+}
+
+#main-nav .logo,
+#main-nav #login {
+    flex-grow: 1;
+}
+
+#main-nav #login {
+    text-align: end;
+}
+
+#login button {
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+/* main - hero section */
+
+#hero-section .content {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+#hero-section {
+    padding: 3rem;
+    background-image: url("../img/jumbo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 500px;
+}
+
+#hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#hero-btn-left {
+    background-color: white;
+    font-size: 1.3rem;
+    padding: 13px;
+}
+
+#hero-btn-right {
+    color: white;
+    background-color: #232828;
+    font-size: 1.3rem;
+    padding: 13px;
+}
+
+/* main section */
+
+.main-section {
+    padding: 3rem;
+}
+
+.main-section .content {
+    width: 40%;
+
+    /*debug*/
+    height: 500px;
+    background-color: dodgerblue;
+}
+
+.main-section .content-small {
+    width: 30%;
+
+    /*debug*/
+    height: 500px;
+    background-color: pink;
+}
+
+/* main - call to action section */
+
+#cta-section {
+    padding: 3rem;
+
+}
+
+#cta-section .content {
+    width: 70%;
+
+    /*debug*/
+    height: 1000px;
+    background-color: green;
+}
+
+/* footer */
+footer {
+    padding: 1rem 3rem;
+    background-color: #23272a;
+}
+
+#footer-top {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid white;
+}
+
+#content-small-container {
+    display: flex;
+    flex-grow: 2;
+}
+
+#footer-top .content {
+    flex-grow: 1;
+    padding: 10px;
+    /*debug*/
+    background-color: lightcoral;
+    height: 600px;
+    border: 2px dashed black;
+}
+
+#content-small-container .content-small {
+    flex-grow: 1;
+    padding: 10px;
+
+    /*debug*/
+    background-color: turquoise;
+    height: 600px;
+    border: 2px dashed white;
+}
+
+#footer-bottom {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 0;
+
+    /*debug*/
+    background-color: aquamarine;
+}
