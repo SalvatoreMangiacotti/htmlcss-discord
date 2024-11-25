@@ -25,6 +25,16 @@ h1 {
     margin-bottom: 2rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 p {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
@@ -104,7 +114,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 500px;
+    min-height: 500px;
 }
 
 #hero-buttons {
@@ -134,33 +144,34 @@ header {
 
 .main-section .content {
     width: 40%;
-
-    /*debug*/
-    height: 500px;
-    background-color: dodgerblue;
 }
 
 .main-section .content-small {
     width: 30%;
-
-    /*debug*/
-    height: 500px;
-    background-color: pink;
+    flex-wrap: wrap;
 }
 
 /* main - call to action section */
 
 #cta-section {
     padding: 3rem;
-
+    text-align: center;
 }
 
 #cta-section .content {
     width: 70%;
+    margin-top: 5rem;
+}
 
-    /*debug*/
-    height: 1000px;
-    background-color: green;
+#item4-big {
+    width: 100%;
+}
+
+#cta-button {
+    padding: 15px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #90a1e2;
 }
 
 /* footer */
